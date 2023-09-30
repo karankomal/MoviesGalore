@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="@color/dark_linen"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="2dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="225dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Movie Poster Image"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/movie_poster_land"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:text="Gran Turismo"
+            android:textStyle="bold"
+            android:fontFamily="@font/abstergo"
+            android:textColor="@color/onyx"
+            android:layout_toRightOf="@+id/movie_poster"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test description wowowowowowowo"
+            android:fontFamily="@font/abstergo"
+            android:textColor="@color/onyx"
+            android:layout_below="@id/ratingStarsLayout"
+            android:layout_toRightOf="@+id/movie_poster"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:maxLines="7"
+            android:ellipsize="end"
+            />
+
+        <LinearLayout
+            android:id="@+id/ratingStarsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_title"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/movie_poster"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:scaleX="1.2"
+            android:scaleY="1.2" >
+
+            <RatingBar
+                android:id="@+id/ratingStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:stepSize="0.01"
+                android:numStars="5"
+                android:rating="3.4"
+                android:progressTint="@color/verdigris"
+                android:secondaryProgressTint="@color/verdigris"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
