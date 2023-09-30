@@ -21,7 +21,7 @@ The following **optional** features are implemented:
   - App should neatly arrange data in both landscape and portrait mode
 - [X] Implement Glide to display placeholder graphics during loading
   - Note: this feature is difficult to capture in a GIF without throttling internet speeds.  Instead, include an additional screencap of your Glide code implementing the feature.  (<10 lines of code)
-  - Screecap:
+  - Screencap:
   <img src='placeholder.png' title='Glide Placeholder/Error Image Code' width='' alt='Glide Placeholder/Error Image Code' />
 
 The following **additional** features are implemented:
